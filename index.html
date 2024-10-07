@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-10-07 22:33:45'
+  postUpdate: '2024-10-07 22:53:47'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -148,27 +148,38 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://images.unsplash.com/photo-1713245275828-a83869408f96?q=80&amp;w=2669&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"><nav id="nav"><span id="blog-info"><a href="/" title="WangHao 's Blog"><span class="site-name">WangHao 's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">WangHao 's Blog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/574993075" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:w574993075@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/STM32-5GRaspberrypi/" title="STM32_5GRaspberrypi">STM32_5GRaspberrypi</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:20:55.000Z" title="Created 2024-10-06 23:20:55">2024-10-06</time></span></div><div class="content">STM32代码main.c总览12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879#include &quot;main.h&quot;#include &quot;cmsis_os.h&quot;#include &quot;adc.h&quot;#include &quot;i2c.h&quot;#include &quot;tim.h&quot;#include &quot;usart.h&quot;#include &quot;gpio.h&quot;void SystemClock_Config(void);void MX_FREERTOS_Init(void);int main(void)&#123;  SystemClock_Config();	MX_GPIO_Init();    MX_USART1_UART_Init();   ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/Splatting/" title="Splatting">Splatting</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:19:18.000Z" title="Created 2024-10-06 23:19:18">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="content">Splatting
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://images.unsplash.com/photo-1713245275828-a83869408f96?q=80&amp;w=2669&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"><nav id="nav"><span id="blog-info"><a href="/" title="WangHao 's Blog"><span class="site-name">WangHao 's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">WangHao 's Blog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/574993075" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:w574993075@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/STM32-5GRaspberrypi/" title="STM32_5GRaspberrypi">STM32_5GRaspberrypi</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:20:55.000Z" title="Created 2024-10-06 23:20:55">2024-10-06</time></span></div><div class="content">STM32代码
+main.c
+总览
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879#include &quot;main.h&quot;#include &quot;cmsis_os.h&quot;#include &quot;adc.h&quot;#include &quot;i2c.h&quot;#include &quot;tim.h&quot;#include &quot;usart.h&quot;#include &quot;gpio.h&quot;void SystemClock_Config(void);void MX_FREERTOS_Init(void);int main(void)&#123;  SystemClock_Config();	MX_GPIO_Init();    MX_USART1_UART_Init() ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/Splatting/" title="Splatting">Splatting</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:19:18.000Z" title="Created 2024-10-06 23:19:18">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="content">Splatting
+
+
 一种体渲染方法，从3D物体渲染到2D平面
+
 
 也叫抛雪球方法
 
+
 核心
+
 选择雪球
 抛掷，3D投影到2D
 合成形成最后图像
 
 
 
-捏雪球（搞定一个核形状）
+捏雪球
+（搞定一个核形状）
 选择3D高斯椭圆
+
 
 仿射后高斯仍闭合
 3D降2D依然为高斯（沿一个轴积分）
 
 
 
- 3D gaussian为什么是椭球？
+*** 3D gaussian为什么是椭球？***
+
 
 
 v的概率密度函数
@@ -186,75 +197,113 @@ x的概率密度函数
 
 
 
+
+
 都是常数，二维时是椭圆
 
 三维
 
 
 
-推导公式发现 ——— 为常数时，有一个椭球面
+推导公式发现 ------ 为常数时，有一个椭球面
 高斯取值范围0~1，两边同时乘根号下，可知3D高斯本质是椭球面一层一层相嵌套（俄罗斯套娃）实心的椭球
 
 各向同性
+
 在所有方向具有相同扩散程度（球）
 3d高斯分布：协方差矩阵是对角矩阵
 
 各向异性
+
+
 在不同方向具有不同扩散程度（梯度）
 
+
 椭球
+
 
 3d高斯分布：协方差矩阵是对角矩阵
 
 
 
 协方差矩阵如何控制椭球形状
- 
- x是三位xyz
- Σ是协方差
+
+
+x是三位xyz
+Σ是协方差
+
 
 对于标准的高斯分布：
 
 
 
+
+
 对角线是1，其他为0
 
-==任意高斯可以看作是标准高斯通过仿射变换得到==
-协方差矩阵可以通过旋转 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/Trim3D/" title="Trim3D">Trim3D</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="content">TrimGS ——— 修剪3D高斯飞溅论文链接：TrimGS
-1.NeRF++1.1介绍在原始NeRF（Neural Radiance Fields）基础上进行改进和扩展的一种神经渲染技术。该技术主要解决了NeRF在处理大尺度、无边界场景（如室外360度场景）时面临的挑战，并提高了渲染质量和效率
+
+==任意高斯可以看作是 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/Trim3D/" title="Trim3D">Trim3D</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="content">TrimGS ------ 修剪3D高斯飞溅
+论文链接：TrimGS
+1.NeRF++
+1.1介绍
+在原始NeRF（Neural Radiance Fields）基础上进行改进和扩展的一种神经渲染技术。该技术主要解决了NeRF在处理大尺度、无边界场景（如室外360度场景）时面临的挑战，并提高了渲染质量和效率
 1.2改进地方
+
 形状-辐射模糊性分析：
+
 NeRF++首先分析了NeRF中的形状-辐射模糊性问题，指出即使在错误的密度分布下，NeRF仍能产生高质量图像，这主要归因于网络设计限制了高频信号的拟合。
 通过实验验证，NeRF在训练过程中可能学习到错误的几何形状，但仍能在训练样本上渲染出正确的结果。这种现象是由于损失函数仅要求预测颜色与原图接近，而不严格要求几何形状的准确性。
 
 
 倒球面参数化（Inverted Sphere Parametrization）：
+
 为解决室外360度场景的渲染挑战，NeRF++提出了倒球面参数化方法。该方法将场景空间划分为两个体积：一个内部单位球体和一个由覆盖内部体积补集的反向球体表示的外部体积。
-内部NeRF不需要重新参数化，因为场景的这一部分被很好地限制住了。外部Ne ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/ACM-day4/" title="ACM-day4">ACM-day4</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T14:59:56.000Z" title="Created 2024-10-06 22:59:56">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">day 5链表（合并两个有序链表）
+内部NeRF不需要重新参数化，因为场景的这一部分被很好地 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/ACM-day4/" title="ACM-day4">ACM-day4</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T14:59:56.000Z" title="Created 2024-10-06 22:59:56">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">day 5
+链表（合并两个有序链表）
+
 题目：
 
 
-我的方法1234567891011121314151617181920212223242526272829303132333435363738#include&lt;iostream&gt;using namespace std;class Solution &#123;public:    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &#123;        ListNode* head = new ListNode();        ListNode* list3 = head;        while (list1 != nullptr &amp;&amp; list2 != nullptr) &#123;            if (list1-&gt;val &lt; list2-&gt;val) &#123;                list3-&gt;next = new ListNode(list1-&gt;val);           ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/ACM-day3/" title="ACM-day3">ACM-day3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T11:07:35.000Z" title="Created 2024-10-06 19:07:35">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">day 3数组（移动零）
+我的方法
+1234567891011121314151617181920212223242526272829303132333435363738#include&lt;iostream&gt;using namespace std;class Solution &#123;public:    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &#123;        ListNode* head = new ListNode();        ListNode* list3 = head;        while (list1 != nullptr &amp;&amp; list2 != nullptr) &#123;            if (list1-&gt;val &lt; list2-&gt;val) &#123;                list3-&gt;next = new ListNode(list1-&gt;val);        ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/06/ACM-day3/" title="ACM-day3">ACM-day3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-06T11:07:35.000Z" title="Created 2024-10-06 19:07:35">2024-10-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">day 3
+数组（移动零）
+
 我的方法（错误）
+
 用双指针，遇到第一个指针是0，第二个是非零就交换，两个都是0则同时后移2
 错误的点，遇到数组个数特殊的时候，容易指针超出数组
 
-123456789101112131415161718192021222324252627282930#include &lt;iostream&gt;using namespace std;//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123;public:    void moveZeroes(vector&lt;int&gt;&amp; nums) &#123;        int *p = &amp;nums[0];        int *q = &amp;nums[1];        int i = 0;        if(nums.size() == 1) return;        while(i&lt;nums.size()-2)&#123;            if(* ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/04/ACM-day2/" title="ACM_day2">ACM_day2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-04T13:57:48.000Z" title="Created 2024-10-04 21:57:48">2024-10-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">算法day 2数组（两数之和）
-我的方法-暴力枚举（比较冗杂）1234567891011121314151617#include &lt;iostream&gt;using namespace std;//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123;public:    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;        int n = nums.size();        for (int i = 0; i &lt; n; ++i) &#123;            for (int j = i + 1; j &lt; n; ++j) &#123;                if (nums[i] + nums[j] == target) &#123;                    return &#123;i, j&#125;;     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/04/ACM-day1/" title="ACM-day1">ACM-day1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-04T13:29:21.000Z" title="Created 2024-10-04 21:29:21">2024-10-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">算法学习day 1递归（自己调用自己）爬楼梯
-我的方法   超时12345678910111213141516171819202122int sum = 0;void Output(int n) &#123;    if(n &lt; 0 ) &#123;        return;    &#125;    if(n == 0) &#123;        sum ++;    &#125;    else &#123;        Output(n-1);        Output(n-2);    &#125;&#125;int main() &#123;    cout &lt;&lt; &quot;请输入阶数n=&quot;;    int n;    cin &gt;&gt; n;    Output(n);// 调用函数    cout &lt;&lt; sum;    return 0;&#125;
+123456789101112131415161718192021222324252627282930#include &lt;iostream&gt;using namespace std;//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123;public:    void moveZeroes(vector&lt;int&gt;&amp; nums) &#123;        int *p = &amp;nums[0];        int *q = &amp;nums[1];        int i = 0;        if(nums.size() == 1) return;        while(i&lt;nums.size()-2)&#123;            i ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/04/ACM-day2/" title="ACM_day2">ACM_day2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-04T13:57:48.000Z" title="Created 2024-10-04 21:57:48">2024-10-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">算法
+day 2
+数组（两数之和）
+
+我的方法-暴力枚举（比较冗杂）
+1234567891011121314151617#include &lt;iostream&gt;using namespace std;//leetcode submit region begin(Prohibit modification and deletion)class Solution &#123;public:    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;        int n = nums.size();        for (int i = 0; i &lt; n; ++i) &#123;            for (int j = i + 1; j &lt; n; ++j) &#123;                if (nums[i] + nums[j] == target) &#123;                    return &#123;i, j&#125;; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/04/ACM-day1/" title="ACM-day1">ACM-day1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-04T13:29:21.000Z" title="Created 2024-10-04 21:29:21">2024-10-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">算法学习
+day 1
+递归（自己调用自己）
+爬楼梯
+
+我的方法   超时
+12345678910111213141516171819202122int sum = 0;void Output(int n) &#123;    if(n &lt; 0 ) &#123;        return;    &#125;    if(n == 0) &#123;        sum ++;    &#125;    else &#123;        Output(n-1);        Output(n-2);    &#125;&#125;int main() &#123;    cout &lt;&lt; &quot;请输入阶数n=&quot;;    int n;    cin &gt;&gt; n;    Output(n);// 调用函数    cout &lt;&lt; sum;    return 0;&#125;
 解决办法：斐波那契数列+哈希表(JAVA)
+
 要么1 一步走完，一种方法
 要么2 （1+1）或者（2），两种方法
 同样会重复计算
 
-此时用一个哈希表存放已经计算过的 f ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/02/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-02T07:28:54.305Z" title="Created 2024-10-02 15:28:54">2024-10-02</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+此时用一个哈希表存放已经 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/10/02/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-02T07:28:54.305Z" title="Created 2024-10-02 15:28:54">2024-10-02</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+1$ hexo new &quot;My New Post&quot;
 More info: Writing
-Run server1$ hexo server
+Run server
+1$ hexo server
 More info: Server
-Generate static files1$ hexo generate
+Generate static files
+1$ hexo generate
 More info: Generating
-Deploy to remote sites1$ hexo deploy
+Deploy to remote sites
+1$ hexo deploy
 More info: Deployment
 </div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/Avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">WangHao</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/574993075" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:w574993075@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/STM32-5GRaspberrypi/" title="STM32_5GRaspberrypi">STM32_5GRaspberrypi</a><time datetime="2024-10-06T15:20:55.000Z" title="Created 2024-10-06 23:20:55">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/Splatting/" title="Splatting">Splatting</a><time datetime="2024-10-06T15:19:18.000Z" title="Created 2024-10-06 23:19:18">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/Trim3D/" title="Trim3D">Trim3D</a><time datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/ACM-day4/" title="ACM-day4">ACM-day4</a><time datetime="2024-10-06T14:59:56.000Z" title="Created 2024-10-06 22:59:56">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/ACM-day3/" title="ACM-day3">ACM-day3</a><time datetime="2024-10-06T11:07:35.000Z" title="Created 2024-10-06 19:07:35">2024-10-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
@@ -263,4 +312,4 @@ More info: Deployment
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">算法</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/"><span class="card-category-list-name">视觉分析</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/STM32/" style="font-size: 1.1em; color: #999">STM32</a> <a href="/tags/ACM/" style="font-size: 1.5em; color: #99a9bf">ACM</a> <a href="/tags/3D-Gaussion-Splatting/" style="font-size: 1.1em; color: #999">3D Gaussion Splatting</a> <a href="/tags/TrimGS/" style="font-size: 1.1em; color: #999">TrimGS</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-07T14:33:45.457Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By WangHao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/STM32/" style="font-size: 1.1em; color: #999">STM32</a> <a href="/tags/ACM/" style="font-size: 1.5em; color: #99a9bf">ACM</a> <a href="/tags/3D-Gaussion-Splatting/" style="font-size: 1.1em; color: #999">3D Gaussion Splatting</a> <a href="/tags/TrimGS/" style="font-size: 1.1em; color: #999">TrimGS</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-07T14:53:47.047Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By WangHao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
