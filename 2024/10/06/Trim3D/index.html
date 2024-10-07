@@ -175,8 +175,8 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://blog-lilac-eight-87.vercel.app/',
-      region: 'ap-tianjin',
+      envId: 'https://mytwikoo.b2wang.cn/',
+      region: '',
       urls: [window.location.pathname],
       includeReply: false
     }).then(res => {
@@ -189,8 +189,8 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://blog-lilac-eight-87.vercel.app/',
-      region: 'ap-tianjin',
+      envId: 'https://mytwikoo.b2wang.cn/',
+      region: '',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
