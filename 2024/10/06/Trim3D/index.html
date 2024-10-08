@@ -7,7 +7,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/Avatar.png">
 <meta property="article:published_time" content="2024-10-06T15:06:01.000Z">
-<meta property="article:modified_time" content="2024-10-08T14:48:22.010Z">
+<meta property="article:modified_time" content="2024-10-08T14:54:15.502Z">
 <meta property="article:author" content="WangHao">
 <meta property="article:tag" content="TrimGS">
 <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-10-08 22:48:22'
+  postUpdate: '2024-10-08 22:54:15'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -153,7 +153,7 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="WangHao 's Blog"><span class="site-name">WangHao 's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Trim3D</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-08T14:48:22.010Z" title="Updated 2024-10-08 22:48:22">2024-10-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Trim3D"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="trimgs-修剪3d高斯飞溅">TrimGS ------ 修剪3D高斯飞溅</h1>
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="WangHao 's Blog"><span class="site-name">WangHao 's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Trim3D</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-08T14:54:15.502Z" title="Updated 2024-10-08 22:54:15">2024-10-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%A7%86%E8%A7%89%E5%88%86%E6%9E%90/">视觉分析</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Trim3D"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="trimgs-修剪3d高斯飞溅">TrimGS ------ 修剪3D高斯飞溅</h1>
 <p>论文链接：<a target="_blank" rel="noopener" href="https://trimgs.github.io/">TrimGS</a></p>
 <h2 id="1-nerf">1.NeRF++</h2>
 <h3 id="1-1介绍">1.1介绍</h3>
@@ -217,7 +217,7 @@
 </ol>
 <h2 id="4-相关工作">4.相关工作</h2>
 <h3 id="4-1新颖视图的合成-nvs">4.1新颖视图的合成（NVS）</h3>
-<p>==分为隐式和显式==</p>
+<mark class="hl-label yellow">分为隐式和显式</mark> 
 <h4 id="4-1-1nerf使用隐式-体渲染">4.1.1NeRF使用隐式、体渲染</h4>
 <p>NeRF是使用<a href="#%E9%9A%90%E5%BC%8F%E4%BA%AE%E5%BA%A6%E5%9C%BA">隐式亮度场</a>来表示NVS的3D场景，使用多层感知器(MLP)对每个空间 位置的几何和光度信息进行编码</p>
 <p>NeRF利用体渲染技术[14,5]将隐式 神经场渲染成图像</p>
@@ -228,7 +228,7 @@
 <blockquote>
 <p>因此，一系列的方法旨在提 高其效率。基于网格的特征表示被证明在加速收敛方面是有效的。代表性方法[22,17,7,26]提出在 MLP中优化基于网格的特征而不是神经参数。在渲染效率方面，烘焙策略[24,9,32,25]和基于稀疏 哈希的网格[22]被用于提升性能。另一项工作[1,2,10]侧重于提高NeRF的渲染质量，特别是解决 抗锯齿问题</p>
 </blockquote>
-<p>==Plenoxels、3D Gaussion Splatting等使用<a href="#%E6%98%BE%E7%A4%BA%E4%BA%AE%E5%BA%A6%E5%9C%BA">显式亮度场</a>==</p>
+<mark class="hl-label Gaussion">Plenoxels、3D</mark> 
 <h3 id="4-2-高斯分布曲面重建">4.2 高斯分布曲面重建</h3>
 <p><strong>SuGaR[8]利用有符号距离函数和密度来监督高斯分布，迫使它们与物体表面对齐。然后利用泊松曲面重构提取网格，将三维高斯分布与粗网格绑定，并进行进一步的细化</strong></p>
 <ul>
@@ -285,7 +285,7 @@
 <ul>
 <li>主要关注无界场景。它利用基于光线跟踪的三维高斯分布体渲染，能够利用水平集直接提取几何三维高斯分布，而无需像SuGaR和2DGS那样诉诸泊松重建或TSDF融合</li>
 </ul>
-<p>==以上方法产生具有强几何正则化的光滑表面，但在捕捉详细的几何和纹理方面面临挑战==</p>
+<mark class="hl-label yellow">以上方法产生具有强几何正则化的光滑表面，但在捕捉详细的几何和纹理方面面临挑战</mark> 
 <h3 id="4-3-高斯分布的剪枝策略">4.3 高斯分布的剪枝策略</h3>
 <ul>
 <li>
@@ -301,8 +301,8 @@
 <p>设计一个显著分数，衡量高斯对渲染图像的贡献，并修剪 那些分数低的图像</p>
 </li>
 </ul>
-<p>==这些方法都专注于修剪策略，但它们主要将其视为减少内存成本的方法，而不是更精确的几何形状==<br>
-<em>因此，它们倾向于保留较大的高斯函数，而修剪较小的，这降低了表 示几何细节的能力</em></p>
+<mark class="hl-label green">这些方法都专注于修剪策略，但它们主要将其视为减少内存成本的方法，而不是更精确的几何形状</mark> 
+<p><em>因此，它们倾向于保留较大的高斯函数，而修剪较小的，这降低了表 示几何细节的能力</em></p>
 <h2 id="5-初步认识">5.初步认识</h2>
 <h3 id="5-1-3dgs-3d高斯飞溅">5.1 3DGS（3D高斯飞溅）</h3>
 <ul>
@@ -401,7 +401,7 @@
 </ol>
 <h4 id="举个例子">举个例子</h4>
 <p>想象你在给一组学生的成绩画曲线。如果你只关注拟合这些数据点，可能会得到一条非常复杂、弯弯曲曲的线，这样在新数据上就很容易出错（过拟合）。为了避免这个问题，你可以在损失函数中添加一个正则项，比如L2正则化（也叫权重衰减），它会惩罚权重过大的情况。</p>
-<p><strong>==具体来说，L2正则化会计算所有权重的平方和，然后把这个值加到损失函数中。这就像在说：“如果你的曲线太复杂，就得付出代价。”这样，模型会倾向于选择更简单、更加平滑的曲线，更好地适应新数据==</strong></p>
+<p><strong><mark class="hl-label pink">具体来说，L2正则化会计算所有权重的平方和，然后把这个值加到损失函数中。这就像在说：“如果你的曲线太复杂，就得付出代价。”这样，模型会倾向于选择更简单、更加平滑的曲线，更好地适应新数据</mark> </strong></p>
 <h3 id="隐式亮度场">隐式亮度场</h3>
 <p><strong>即不直接存储场景的几何信息，而是通过神经网络学习光线在场景中的分布，实现新视角的合成</strong></p>
 <blockquote>
@@ -463,7 +463,7 @@
 <li>在一维空间中演示第5.2节中讨论的梯度困境，其中常见的方波函数近似为如图所示的一维高斯分布</li>
 </ul>
 <p><img src="/2024/10/06/Trim3D/image-20241007213948278.png" alt="image-20241007213948278"></p>
-<p>==方波函数用高斯分布局部近似。σ= T/4的方波函数比σ= T/2的方波函数得到更大的梯度，从而更快 地向最优位置移动==</p>
+<mark class="hl-label T/4的方波函数比σ=">方波函数用高斯分布局部近似。σ=</mark> 
 <h4 id="1">1</h4>
 <p>让<img src="/2024/10/06/Trim3D/image-20241007214139305.png" alt="image-20241007214139305">为周期为2T的方波函数，g~σ~(x;µ)为均值变化µ、标准差固定σ的一维高斯分布</p>
 <h4 id="2">2</h4>
