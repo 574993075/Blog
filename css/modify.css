@@ -23,6 +23,12 @@
     top: 100px !important;
   }
 }
+:root {
+  --card-bg: rgba(255,255,255,0.8) !important;
+}
+[data-theme='dark']:root {
+  --card-bg: rgba(18,18,18,0.8) !important;
+}
 .top-img {
   height: 250px;
   margin: -50px -40px 50px;
