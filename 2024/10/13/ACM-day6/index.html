@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ACM-day6 | WangHao 's Blog</title><meta name="author" content="WangHao"><meta name="copyright" content="WangHao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Day6最小数和它的位置题目 方法1234567891011121314151617181920int main() {    cout << &quot;请输入数组大小N:&quot;;    int N;    cin >> N;    int arr[N];    cout << &quot;请输入数组：&quot;;    for(int i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ACM-day6">
+<meta property="og:url" content="http://example.com/2024/10/13/ACM-day6/index.html">
+<meta property="og:site_name" content="WangHao 's Blog">
+<meta property="og:description" content="Day6最小数和它的位置题目 方法1234567891011121314151617181920int main() {    cout << &quot;请输入数组大小N:&quot;;    int N;    cin >> N;    int arr[N];    cout << &quot;请输入数组：&quot;;    for(int i">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png">
+<meta property="article:published_time" content="2024-10-12T16:47:16.000Z">
+<meta property="article:modified_time" content="2024-10-13T17:47:12.690Z">
+<meta property="article:author" content="WangHao">
+<meta property="article:tag" content="ACM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2024/10/13/ACM-day6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ACM-day6',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-14 01:47:12'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/themes/butterfly/source/css/modify.styl"><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/Avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png')"><nav id="nav"><span id="blog-info"><a href="/" title="WangHao 's Blog"><span class="site-name">WangHao 's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ACM-day6</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-12T16:47:16.000Z" title="Created 2024-10-13 00:47:16">2024-10-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-13T17:47:12.690Z" title="Updated 2024-10-14 01:47:12">2024-10-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="ACM-day6"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url('https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png');"></div><article class="post-content" id="article-container"><h1 id="Day6"><a href="#Day6" class="headerlink" title="Day6"></a>Day6</h1><h2 id="最小数和它的位置"><a href="#最小数和它的位置" class="headerlink" title="最小数和它的位置"></a>最小数和它的位置</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/2024/10/13/ACM-day6/image-20241013213919117.png" alt="image-20241013213919117"></p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    cout &lt;&lt; <span class="string">"请输入数组大小N:"</span>;</span><br><span class="line">    <span class="type">int</span> N;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    <span class="type">int</span> arr[N];</span><br><span class="line">    cout &lt;&lt; <span class="string">"请输入数组："</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; i++) {</span><br><span class="line">        cin &gt;&gt; arr[i];</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> min = arr[<span class="number">0</span>];</span><br><span class="line">    <span class="type">int</span> mindex = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt; N; i++) {</span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt; min) {</span><br><span class="line">            min = arr[i];</span><br><span class="line">            mindex = i;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    cout &lt;&lt; <span class="string">"数组最小的是："</span> &lt;&lt; min &lt;&lt; <span class="string">"下标："</span> &lt;&lt; mindex;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>直接循环遍历整个数组，记录最小的值和下标</li>
+<li>因为遇到相同大小时只取下标小的，所以判断的时候<code>if(arr[i] &lt; min)</code>，直接记录第一个最小值</li>
+</ul>
+<h2 id="数组中的列"><a href="#数组中的列" class="headerlink" title="数组中的列"></a>数组中的列</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><p><img src="/2024/10/13/ACM-day6/image-20241013225049747.png" alt="image-20241013225049747"></p>
+<mark class="hl-label blue">使用scanf时候需要过滤回车，cin的时候不需要</mark> 
+<ul>
+<li>这里方便输入和计算采用M[4] [4]</li>
+</ul>
+<blockquote>
+<p>数组为</p>
+<p>1，2，3，4；</p>
+<p>5，6，7，8；</p>
+<p>9，10，11，12；</p>
+<p>13，14，15，16；</p>
+</blockquote>
+<h3 id="方法-1"><a href="#方法-1" class="headerlink" title="方法"></a>方法</h3><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    cout &lt;&lt; <span class="string">"请输入所求列数：（从0开始）"</span>;</span><br><span class="line">    <span class="type">int</span> rank; <span class="type">char</span> st;</span><br><span class="line">    cin &gt;&gt; rank;</span><br><span class="line">    cout &lt;&lt; <span class="string">"请输入S,M:"</span>;</span><br><span class="line">    cin &gt;&gt; st;</span><br><span class="line">    <span class="type">double</span> R[<span class="number">4</span>][<span class="number">4</span>];</span><br><span class="line">    cout &lt;&lt; <span class="string">"输入数组:"</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">4</span> ; i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span> ; j &lt; <span class="number">4</span>; j++)</span><br><span class="line">            cin &gt;&gt; R[i][j];</span><br><span class="line">    <span class="type">double</span> num = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(st == <span class="string">'S'</span>) {</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">4</span> ; i++)</span><br><span class="line">            num = num + R[i][rank];</span><br><span class="line">        num = num <span class="number">-1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(st == <span class="string">'M'</span>) {</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">            num = num + R[i][rank];</span><br><span class="line">        num = num <span class="number">-1</span>;</span><br><span class="line">        num = num / <span class="number">4</span>;</span><br><span class="line">    }</span><br><span class="line">    cout &lt;&lt; num;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>注意带上{ }  </li>
+</ul>
+<h2 id="数组的右下半部分"><a href="#数组的右下半部分" class="headerlink" title="数组的右下半部分"></a>数组的右下半部分</h2><h3 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h3><p><img src="/2024/10/13/ACM-day6/image-20241014000016103.png" alt="image-20241014000016103"></p>
+<p>矩阵：9.7 -4.9 6.1 -6.1 -9.6 1.0 -3.2 0.6 3.2 -9.8 4.9 1.2<br>-2.8 -5.3 2.8 -1.9 -5.4 7.5 -2.0 5.7 2.3 5.3 -7.5 8.9<br>6.0 4.3 3.8 -6.7 8.1 -0.5 7.8 -2.2 -1.0 4.0 -4.9 -9.4<br>5.4 3.7 -6.5 -3.9 -3.3 4.1 -2.5 -4.7 8.2 1.4 1.8 4.7<br>2.4 9.0 -4.3 9.6 8.6 -6.1 -7.4 8.6 5.6 0.5 -0.4 5.2<br>-5.2 2.9 -5.6 4.0 -0.2 3.8 -4.1 -1.6 -3.8 -3.1 -1.1 3.3<br>-9.4 -1.4 0.6 6.5 -4.3 -8.3 6.1 2.9 -5.2 2.5 9.8 -7.7<br>-2.9 -3.6 7.9 -5.8 -4.7 8.2 -6.2 1.0 7.4 -1.0 -4.4 -4.5<br>0.1 9.5 4.9 1.5 0.8 -8.2 0.4 9.5 -0.8 -0.9 9.7 -2.1<br>0.1 -7.6 7.8 -6.9 5.5 1.4 4.0 7.8 1.0 -1.2 9.7 -1.9<br>-4.6 2.3 -5.5 8.2 -4.8 -3.7 5.4 0.2 -2.4 -0.8 7.4 0.0<br>-0.1 8.2 0.8 -3.5 -7.6 -0.5 5.6 8.4 -8.6 0.9 9.0 -7.5</p>
+<h3 id="方法-2"><a href="#方法-2" class="headerlink" title="方法"></a>方法</h3><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    cout &lt;&lt; <span class="string">"输入S/M："</span>;</span><br><span class="line">    <span class="type">char</span> c;</span><br><span class="line">    cin &gt;&gt; c;</span><br><span class="line">    cout &lt;&lt; <span class="string">"输入数组M[12][12]:"</span>;</span><br><span class="line">    <span class="type">double</span> M[<span class="number">12</span>][<span class="number">12</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">12</span> ;i++) {</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span> ; j &lt; <span class="number">12</span> ; j++) {</span><br><span class="line">            cin &gt;&gt; M[i][j];</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="type">double</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span> ; i &lt; <span class="number">12</span> ; i++) {</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">11</span> ; j &gt;= <span class="number">12</span> - i ; j--) {</span><br><span class="line">            sum = sum + M[i][j];</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> count = (<span class="number">1</span><span class="number">+11</span>)*<span class="number">11</span>/<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>(c == <span class="string">'S'</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.1f"</span>,sum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(c == <span class="string">'M'</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.1f"</span>,sum/count);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>题目要求输出保留一位小数</li>
+<li>要用printf(“%.1f”)</li>
+<li>引入库函数cstdio</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">WangHao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/13/ACM-day6/">http://example.com/2024/10/13/ACM-day6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ACM/">ACM</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/10/10/ACM-day5/" title="ACM-day5"><img class="cover" src="https://s2.loli.net/2024/10/10/uJq5trzM9XTcmjC.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">ACM-day5</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2024/10/04/ACM-day1/" title="ACM-day1"><img class="cover" src="https://s2.loli.net/2024/10/10/Kn5Nzp8uHrT2G6R.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-04</div><div class="title">ACM-day1</div></div></a></div><div><a href="/2024/10/04/ACM-day2/" title="ACM_day2"><img class="cover" src="https://s2.loli.net/2024/10/10/Kn5Nzp8uHrT2G6R.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-04</div><div class="title">ACM_day2</div></div></a></div><div><a href="/2024/10/06/ACM-day3/" title="ACM-day3"><img class="cover" src="https://s2.loli.net/2024/10/10/Kn5Nzp8uHrT2G6R.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-06</div><div class="title">ACM-day3</div></div></a></div><div><a href="/2024/10/06/ACM-day4/" title="ACM-day4"><img class="cover" src="https://s2.loli.net/2024/10/10/Kn5Nzp8uHrT2G6R.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-06</div><div class="title">ACM-day4</div></div></a></div><div><a href="/2024/10/10/ACM-day5/" title="ACM-day5"><img class="cover" src="https://s2.loli.net/2024/10/10/uJq5trzM9XTcmjC.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-10</div><div class="title">ACM-day5</div></div></a></div></div></div><hr class="custom-hr"><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/Avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">WangHao</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/574993075/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/574993075" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:w574993075@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Day6"><span class="toc-number">1.</span> <span class="toc-text">Day6</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E6%95%B0%E5%92%8C%E5%AE%83%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">最小数和它的位置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE"><span class="toc-number">1.1.1.</span> <span class="toc-text">题目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%88%97"><span class="toc-number">1.2.</span> <span class="toc-text">数组中的列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">题目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%8F%B3%E4%B8%8B%E5%8D%8A%E9%83%A8%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">数组的右下半部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">题目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">方法</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/13/ACM-day6/" title="ACM-day6"><img src="https://s2.loli.net/2024/10/13/lhDntsVoKHaENMu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ACM-day6"></a><div class="content"><a class="title" href="/2024/10/13/ACM-day6/" title="ACM-day6">ACM-day6</a><time datetime="2024-10-12T16:47:16.000Z" title="Created 2024-10-13 00:47:16">2024-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/10/ACM-day5/" title="ACM-day5"><img src="https://s2.loli.net/2024/10/10/uJq5trzM9XTcmjC.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ACM-day5"></a><div class="content"><a class="title" href="/2024/10/10/ACM-day5/" title="ACM-day5">ACM-day5</a><time datetime="2024-10-10T14:44:08.000Z" title="Created 2024-10-10 22:44:08">2024-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/06/STM32-5GRaspberrypi/" title="STM32_5GRaspberrypi"><img src="https://s2.loli.net/2024/10/10/UWA4mn7lOrNMB35.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="STM32_5GRaspberrypi"></a><div class="content"><a class="title" href="/2024/10/06/STM32-5GRaspberrypi/" title="STM32_5GRaspberrypi">STM32_5GRaspberrypi</a><time datetime="2024-10-06T15:20:55.000Z" title="Created 2024-10-06 23:20:55">2024-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/06/Splatting/" title="Splatting"><img src="https://s2.loli.net/2024/10/10/SLf2auAzgXbyKkU.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Splatting"></a><div class="content"><a class="title" href="/2024/10/06/Splatting/" title="Splatting">Splatting</a><time datetime="2024-10-06T15:19:18.000Z" title="Created 2024-10-06 23:19:18">2024-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/06/Trim3D/" title="Trim3D"><img src="https://s2.loli.net/2024/10/10/2Mo7AlwL8OTR3r1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Trim3D"></a><div class="content"><a class="title" href="/2024/10/06/Trim3D/" title="Trim3D">Trim3D</a><time datetime="2024-10-06T15:06:01.000Z" title="Created 2024-10-06 23:06:01">2024-10-06</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">©2024 By WangHao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi! Welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><script>(() => {
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://mytwikoo.b2wang.cn/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://mytwikoo.b2wang.cn/',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.all.min.js').then(init)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
